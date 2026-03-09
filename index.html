@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบฟอร์มรับอุปการะสุนัข</title>
+    <style>
+        body { padding-bottom: 50px; }
+        .footer-center { text-align: center; margin-top: 30px; }
+        fieldset { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>แบบฟอร์มแจ้งความสนใจรับอุปการะสุนัข</h1>
+
+    <form action="#">
+        <fieldset>
+            <legend>1. ข้อมูลส่วนตัวของผู้สนใจ</legend>
+            ชื่อ - นามสกุล: <input type="text" name="fullname" required><br><br>
+            เบอร์ติดต่อ: <input type="tel" name="phone" required><br><br>
+            Email: <input type="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. สิ่งแวดล้อมในการเลี้ยงดู</legend>
+            ที่อยู่: <br>
+            <textarea name="address" rows="4" cols="50"></textarea><br><br>
+
+            ลักษณะที่พักอาศัย: 
+            <select name="housing">
+                <option value="garden">บ้านสวน</option>
+                <option value="single">บ้านเดี่ยว</option>
+                <option value="townhome">บ้านทาวน์โฮม</option>
+                <option value="condo">คอนโดมิเนียม/หอพัก</option>
+            </select><br><br>
+
+            รูปแบบการเลี้ยงดู:<br>
+            <input type="radio" name="style" value="indoor" id="in"> <label for="in">เลี้ยงสุนัขภายในบ้าน</label><br>
+            <input type="radio" name="style" value="outdoor" id="out"> <label for="out">เลี้ยงสุนัขภายนอกบ้าน</label><br><br>
+
+            จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน (ระบุตัวเลข): 
+            <input type="number" name="pet_count" min="0"><br><br>
+
+            <input type="checkbox" name="agreement" id="agree" required>
+            <label for="agree">การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข</label>
+        </fieldset>
+
+        <button type="submit">ส่งแบบฟอร์ม</button>
+    </form>
+
+    <div class="footer-center">
+        6833047021 นายชวิศ แสงเจริญ
+    </div>
+</body>
+</html>
