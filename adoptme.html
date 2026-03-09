@@ -1,43 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>หาบ้านให้สุนัข - Dog Adoption</title>
+    <title>แบบฟอร์มรับอุปการะสุนัข</title>
     <style>
-        .dog-profile { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; list-style: none; }
-        .footer-left { position: fixed; bottom: 10px; left: 10px; font-size: 0.9em; }
+        body { padding-bottom: 50px; }
+        .footer-center { text-align: center; margin-top: 30px; }
+        fieldset { margin-bottom: 20px; }
     </style>
 </head>
 <body>
-    <h1>โครงการหาบ้านใหม่ให้สุนัขใจดี</h1>
-    <p>เลือกน้องหมาที่นิสัยเข้ากับคุณ และกดปุ่มด้านล่างเพื่อแจ้งความสนใจ</p>
+    <h1>แบบฟอร์มแจ้งความสนใจรับอุปการะสุนัข</h1>
 
-    <ul>
-        <li class="dog-profile">
-            <img src="picture/dog1.jpg" alt="น้องกะทิ" width="150">
-            <h3>ชื่อ: กะทิ</h3>
-            <p>อายุ: 2 ปี | สี: ขาว | นิสัย: ขี้อ้อน ชอบเล่นลูกบอล</p>
-        </li>
-        <li class="dog-profile">
-            <img src="picture/dog2.jpg" alt="น้องถุงทอง" width="150">
-            <h3>ชื่อ: ถุงทอง</h3>
-            <p>อายุ: 1 ปี | สี: น้ำตาลทอง | นิสัย: เรียบร้อย เข้ากับแมวได้</p>
-        </li>
-        <li class="dog-profile">
-            <img src="picture/dog3.jpg" alt="น้องด่าง" width="150">
-            <h3>ชื่อ: ด่าง</h3>
-            <p>อายุ: 3 ปี | สี: ขาวดำ | นิสัย: เฝ้าบ้านเก่ง รักเจ้าของ</p>
-        </li>
-        <li class="dog-profile">
-            <img src="picture/dog4.jpg" alt="น้องบราวนี่" width="150">
-            <h3>ชื่อ: บราวนี่</h3>
-            <p>อายุ: 5 เดือน | สี: ช็อกโกแลต | นิสัย: ร่าเริง พลังเยอะ</p>
-        </li>
-    </ul>
+    <form action="#">
+        <fieldset>
+            <legend>1. ข้อมูลส่วนตัวของผู้สนใจ</legend>
+            ชื่อ - นามสกุล: <input type="text" name="fullname" required><br><br>
+            เบอร์ติดต่อ: <input type="tel" name="phone" required><br><br>
+            Email: <input type="email" name="email" required>
+        </fieldset>
 
-    <a href="adoptme.html"><h2>สนใจรับอุปการะสุนัข คลิกที่นี่</h2></a>
+        <fieldset>
+            <legend>2. สิ่งแวดล้อมในการเลี้ยงดู</legend>
+            ที่อยู่: <br>
+            <textarea name="address" rows="4" cols="50"></textarea><br><br>
 
-    <div class="footer-left">
+            ลักษณะที่พักอาศัย: 
+            <select name="housing">
+                <option value="garden">บ้านสวน</option>
+                <option value="single">บ้านเดี่ยว</option>
+                <option value="townhome">บ้านทาวน์โฮม</option>
+                <option value="condo">คอนโดมิเนียม/หอพัก</option>
+            </select><br><br>
+
+            รูปแบบการเลี้ยงดู:<br>
+            <input type="radio" name="style" value="indoor" id="in"> <label for="in">เลี้ยงสุนัขภายในบ้าน</label><br>
+            <input type="radio" name="style" value="outdoor" id="out"> <label for="out">เลี้ยงสุนัขภายนอกบ้าน</label><br><br>
+
+            จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน (ระบุตัวเลข): 
+            <input type="number" name="pet_count" min="0"><br><br>
+
+            <input type="checkbox" name="agreement" id="agree" required>
+            <label for="agree">การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข</label>
+        </fieldset>
+
+        <button type="submit">ส่งแบบฟอร์ม</button>
+    </form>
+
+    <div class="footer-center">
         6833047021 นายชวิศ แสงเจริญ
     </div>
 </body>
