@@ -1,44 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>หาบ้านให้สุนัข - Dog Adoption</title>
     <style>
-        .dog-profile { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; list-style: none; }
-        .footer-left { position: fixed; bottom: 10px; left: 10px; font-size: 0.9em; }
+      h3 {
+        font-size: 30px;
+        font-family: Prompt, serif;
+      }
+      h1{
+        font-size: 50px;
+        font-family: Prompt;
+        text-align: center;
+      }
+      .dog-profile {
+        font-size: 30px;
+        font-family: "Pridi Light";
+        width: 400px;
+        height: 500px;
+        border: dashed navy;
+        background-color: bisque;
+        padding: 50px;
+        margin: 50px;
+        list-style: none;
+        border-radius: 10%;
+        align-content: center;
+      }
+      .footer-left {
+        font-size: 30px;
+        font-family: "Pridi Light";
+        text-align: left;
+        margin-top: 30px;
+      }
+      .link {
+        font-size: 40px;
+        font-family: Prompt;
+        text-align: center;
+        
+      }
+      .header  {
+        font-size: 40px;
+        font-family: Prompt;
+        text-align: center;
+      }
+
     </style>
-</head>
-<body>
-    <h1>โครงการหาบ้านใหม่ให้สุนัขใจดี</h1>
-    <p>เลือกน้องหมาที่นิสัยเข้ากับคุณ และกดปุ่มด้านล่างเพื่อแจ้งความสนใจ</p>
+  </head>
+  <body>
+    <h1>โครงการหาบ้านใหม่ให้สุนัข</h1>
+    <p class="header">เลือกน้องหมาที่นิสัยเข้ากับคุณ และกดปุ่มด้านล่างเพื่อแจ้งความสนใจได้เลย</p>
 
-    <ul>
-        <li class="dog-profile">
-            <img src="picture/dog1.jpg" alt="น้องกะทิ" width="150">แนท
-            <h3>ชื่อ: กะทิ</h3>
-            <p>อายุ: 2 ปี | สี: ขาว | นิสัย: ขี้อ้อน ชอบเล่นลูกบอล</p>
-        </li>
-        <li class="dog-profile">
-            <img src="picture/dog2.jpg" alt="น้องถุงทอง" width="150">
-            <h3>ชื่อ: ถุงทอง</h3>
-            <p>อายุ: 1 ปี | สี: น้ำตาลทอง | นิสัย: เรียบร้อย เข้ากับแมวได้</p>
-        </li>
-        <li class="dog-profile">
-            <img src="picture/dog3.jpg" alt="น้องด่าง" width="150">
-            <h3>ชื่อ: ด่าง</h3>
-            <p>อายุ: 3 ปี | สี: ขาวดำ | นิสัย: เฝ้าบ้านเก่ง รักเจ้าของ</p>
-        </li>
-        <li class="dog-profile">
-            <img src="picture/dog4.jpg" alt="น้องบราวนี่" width="150">
-            <h3>ชื่อ: บราวนี่</h3>
-            <p>อายุ: 5 เดือน | สี: ช็อกโกแลต | นิสัย: ร่าเริง พลังเยอะ</p>
-        </li>
+    <ul style="display: flex; flex-wrap: wrap">
+      <li class="dog-profile">
+        <img src="picture/dog1.jpg" width="400" />
+        <h3>ชื่อ: มิกกี้</h3>
+        <ul>
+          <li>อายุ: 2 ปี</li>
+          <li>สี: น้ำตาล</li>
+          <li>นิสัย: ขี้อ้อน ชอบเล่นลูกบอล</li>
+        </ul>
+      </li>
+
+      <li class="dog-profile">
+        <img src="picture/dog2.jpg" width="400" />
+        <h3>ชื่อ: โจโจ้</h3>
+        <ul>
+          <li>อายุ: 1 ปี</li>
+          <li>สี: น้ำตาล ขาว ดำ</li>
+          <li>นิสัย: เรียบร้อย เข้ากับแมวได้</li>
+        </ul>
+      </li>
+
+      <li class="dog-profile">
+        <img src="picture/dog3.jpg" width="400" />
+        <h3>ชื่อ: ทองหยิบ</h3>
+        <ul>
+          <li>อายุ: 3 ปี</li>
+          <li>สี: น้ำตาล ขาว</li>
+          <li>นิสัย: เฝ้าบ้านเก่ง รักเจ้าของ</li>
+        </ul>
+      </li>
+
+      <li class="dog-profile">
+        <img src="picture/dog4.jpg" width="400" />
+        <h3>ชื่อ: ทองหยอด</h3>
+        <ul>
+          <li>อายุ: 1 ปี</li>
+          <li>สี: ขวา</li>
+          <li>นิสัย: ร่าเริง พลังเยอะ</li>
+        </ul>
+      </li>
+
+      <li class="dog-profile">
+        <img src="picture/dog5.jpg" width="400" />
+        <h3>ชื่อ: ฝอยทอง</h3>
+        <ul>
+          <li>อายุ: 2 ปี</li>
+          <li>สี: น้ำตาล ขวา</li>
+          <li>นิสัย: ฉลาด ร่าเริง กล้าหาญ</li>
+        </ul>
+      </li>
+
+      <li class="dog-profile">
+        <img src="picture/dog6.jpg" height="300" />
+        <h3>ชื่อ: ทองม้วน</h3>
+        <ul>
+          <li>อายุ: 7 ปี</li>
+          <li>สี: ขวา</li>
+          <li>นิสัย: พลังเยอะ รักอิสระ</li>
+        </ul>
+      </li>
     </ul>
-
-    <a href="adoptme.html"><h2>สนใจรับอุปการะสุนัข คลิกที่นี่</h2></a>
-
-    <div class="footer-left">
-        6833047021 นายชวิศ แสงเจริญ
-    </div>
-</body>
+    <a href="adoptme.html" class="link"><h2>สนใจรับอุปการะสุนัข คลิกที่นี่</h2></a>
+    <div class="footer-left">6833047021 นายชวิศ แสงเจริญ</div>
+  </body>
 </html>
